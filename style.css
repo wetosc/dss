@@ -1,0 +1,56 @@
+:root {
+    --menu-height: 5em;    
+}
+
+body {
+    margin: 0px;
+}
+
+#bg-img {
+    background:url(water.jpg) no-repeat center center; 
+    background-size: cover; 
+    height:900px;  
+}
+
+.title-root {
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.title-block {
+    vertical-align: middle;
+    display: table-cell;
+}
+.title-text {
+    font-size: 8em;
+    color: white;
+}
+
+.menu-root {
+    width: 100%;
+    clear: both;
+    display: block;
+    margin: calc(-1*var(--menu-height)) auto;
+}
+
+.menu {
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+    height: calc(var(--menu-height));
+    margin: auto;
+    padding: 0px;
+    width: 40%;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #ffffffee;
+}
+
+.menu-el {
+    margin: 0px 10px;
+    position: relative;
+    display: inline-block;
+    margin-top: calc(var(--menu-height)/2 - 1em);
+}
