@@ -62,10 +62,10 @@ body {
 }
 
 .left.hand {
-  animation-name: lefthandHi;
+  /* animation-name: lefthandHi;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  transform-origin: 100% 0;
+  transform-origin: 100% 0; */
 }
 
 @keyframes lefthandHi {

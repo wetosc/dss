@@ -1,36 +1,40 @@
-/**
-
-  Use animations here. Useful resources on http://docs.codacloud.net
-
-**/
-
+:root {
+  --rotation-angle: 45deg;
+  --translation: 10px;
+  --duration: 0.8s;
+}
 
 .head {
-  /* TODO */
-
+  --rotation-angle: 0deg;
+  --translation: 10px;
+  animation: moveAndRotate var(--duration) infinite;
 }
 
 .body {
-  /* TODO */
-  
+  --rotation-angle: 0deg;
+  --translation: 5px;
+  animation: moveAndRotate var(--duration) infinite;
 }
 
-.left.hand {
-  /* TODO */
-
+.left {
+  --translation: -5px;
+  --rotation-angle: 45deg;
+  animation: moveAndRotate var(--duration) infinite;
+  transform-origin: 100% 0;
 }
 
-.right.hand {
-  /* TODO */
-
+.right {
+  --translation: -5px;
+  --rotation-angle: -45deg;
+  animation: moveAndRotate var(--duration) infinite;
+  transform-origin: 0 0;
 }
 
-.left.foot {
-  /* TODO */
-
-}
-
-.right.foot {
-  /* TODO */
-
+@keyframes moveAndRotate {
+  from {
+    transform: translate(0,0) rotate(0);
+  }
+  50% {
+    transform: translate(0,var(--translation)) rotate(var(--rotation-angle));
+  }
 }
